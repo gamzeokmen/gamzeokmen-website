@@ -1,0 +1,298 @@
+
+@media all{
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Tangerine', serif;
+  font-size: 48px;
+  text-shadow: 4px 4px 4px #aaa;
+}
+
+a {
+  font-family: 'Rubik', sans-serif;
+  font-size: 24px;
+  text-decoration: none;
+  margin-right: 24px;
+}
+
+a.nav-btn {
+  margin-right: 20px;
+}
+
+.hero-btn {
+  margin-top: 5%;
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 100px;
+  padding: 13px;
+  background: #808080;
+  cursor: pointer;
+  font-size: 50px;
+  font-family: 'Tangerine', sans-serif;
+}
+
+a[href="#home"] {
+  color: #5c2f6a;
+}
+
+a[href="#about-me"],
+a[href="#download-cv"],
+a[href="#contact-me"] {
+  color: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.oblique {
+  font-style: oblique;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.header {
+  height: 100vh;
+  background-image: linear-gradient(rgba(99, 102, 114, 0.443), rgba(99, 102, 114, 0.443)), url('file:///Users/gamzeokmen/Documents/Assignment1/media/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 200px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.home-font {
+  font-family: 'Tangerine', cursive;
+  font-size: 48px;
+  text-shadow: 4px 4px 4px #aaa;
+}
+
+.nav-links ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 45%;
+  font-family: 'Rubik', sans-serif;
+}
+
+.nav-links ul li::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #9B7E78;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.text-box {
+  width: 90%;
+  color: #180c73;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  text-align: center;
+  font-family: 'Helvetica', sans-serif;
+  margin-top: -9%;
+}
+
+.text-box h1 {
+  font-size: 80px;
+}
+
+.text-box p {
+  margin: 2% 0 40px;
+  font-size: 40%;
+  font-family: 'Rubik', sans-serif;
+  color: #535364;
+  margin-top: 6%;
+}
+
+.hero-btn:hover {
+  border: 1px solid #9B7E78;
+  background: #9B7E78;
+  transition: 0.5s;
+}
+
+nav .fa {
+  display: none;
+}
+
+/* About Me */
+.about-me {
+  font-family: 'Indie Flower', serif;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 10px;
+  background-image: linear-gradient(rgba(99, 102, 114, 0.443), rgba(99, 102, 114, 0.443)), url('file:///Users/gamzeokmen/Documents/Assignment1/media/background2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.about-me h1 {
+  font-size: 36px;
+  font-weight: 600;
+  font-family: 'comic sans ms', sans-serif;
+  color: #333;
+  padding-bottom: 20px;
+  margin-top: 30px;
+}
+
+.about-me p {
+  color: #3f5aabe0;
+  font-size: 18px;
+  font-family: 'comic sans ms', sans-serif;
+  line-height: 24px;
+  padding: 30px 10px;
+}
+
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.aboutme-col {
+  flex-basis: 31%;
+  background: #e4cbcb;
+  border-radius: 30px;
+  margin-bottom: 12%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.aboutme-col:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.download-cv {
+  width: 100%;
+  margin-top: -20px;
+  text-align: center;
+  padding-top: 2%;
+  position: relative;
+  background-image: linear-gradient(rgba(99, 102, 114, 0.284), rgba(99, 102, 114, 0.284)), url('file:///Users/gamzeokmen/Documents/Assignment1/media/background3.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.download-col {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -20px;
+}
+
+.download-col img {
+  width: 40%;
+  margin-bottom: 5%;
+  margin-top: -10px;
+}
+
+.download-cv a {
+  width: 30%;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 100px;
+  padding: 8px 20px;
+  background: #808080;
+  cursor: pointer;
+  margin-top: -10px;
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+  font-family: Tangerine;
+  font-size: 50px;
+}
+
+.download-cv a:hover {
+  border: 1px solid #ffffff;
+  background: #9B7E78;
+  transition: 0.5s;
+}
+
+.contact-me {
+  width: 100%;
+  margin-top: 0%;
+  text-align: center;
+  padding-top: 2%;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.message {
+  margin-top: -4.5%;
+  margin-left: 57%;
+}
+
+.location {
+  margin-top: 19%;
+  margin-right: 29%;
+}
+
+.email {
+  margin-top: -3.5%;
+  margin-right: 29%;
+}
+
+.phone {
+  margin-top: 11%;
+  margin-left: 57%;
+}
+
+.nav-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 100px;
+  padding: 13px;
+  background: #808080;
+  cursor: pointer;
+}
+
+.nav-btn:hover {
+  border: 1px solid #9B7E78;
+  background: #9B7E78;
+  transition: 0.5s;
+}
+
+}
